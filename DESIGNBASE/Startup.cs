@@ -1,6 +1,8 @@
+using DESIGNBASE.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,7 +25,11 @@ namespace DESIGNBASE
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
+            services.AddDbContext<DesignBaseContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<DesignBaseContext>(options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BEST5STEST;Trusted_Connection=True;MultipleActiveResultSets=True;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,1030 @@
+﻿
+@{
+    ViewBag.Title = "Deneme";
+}
+
+<style>
+
+    .panel-heading {
+        background-color: #6380bd;
+    }
+</style>
+
+<div class="container">
+
+    <div class="container p-3  ">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-white text-center"> Proje No</div>
+                    <div class="panel-body text-dark text-center">4913</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading  text-white text-center"> Trafo Tanım Kodu</div>
+                    <div class="panel-body  text-dark text-center">74019..20</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-white  text-center">Transformatör Tipi</div>
+                    <div class="panel-body text-dark text-center">YTR 200000/245K</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading  text-white text-center"> Proje Adı</div>
+                    <div class="panel-body text-dark text-center">GEMİ TRAFOSU</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading  text-white text-center"> Sipariş No</div>
+                    <div class="panel-body text-dark text-center">3003003..04</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-white  text-center"> TB No</div>
+                    <div class="panel-body text-dark text-center">6290647</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container p-1 mt-3">
+        <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
+            <li class="nav-item ">
+                <a class="nav-link bg-primary text-white active" data-bs-toggle="tab" href="#genel" role="tab">Genel Bilgiler</a>
+            </li>
+            <li class="nav-item ms-1 mb-1">
+                <a class="nav-link bg-primary text-white" data-bs-toggle="tab" href="#sargi" role="tab">Sargı Bilgileri</a>
+            </li>
+            <li class="nav-item ms-1 mb-1">
+                <a class="nav-link bg-primary text-white" data-bs-toggle="tab" href="#akim" role="tab">Akım Bilgileri</a>
+            </li>
+
+            <li class="nav-item ms-1 mb-1">
+                <a class="nav-link bg-primary text-white" data-bs-toggle="tab" href="#cekirdek" role="tab">Çekirdek Bilgileri</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="genel" role="tabpanel">
+
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">Bağlantı Grubu:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>YNd11</option>
+                                                <option>Yd12d</option>
+                                                <option>Ye22</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">İmalat Normu:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>IEC</option>
+                                                <option>IED</option>
+                                                <option>IEF</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Maksimum KD Süresi:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="Sn." />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">Çalışma Yeri Yüksekliği:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="m" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Sarım Gerilim(Usg):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="V/sarım" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Toplam Bakır Ağırlığı:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kg" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">Mühit Sıcaklığı:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="Θ" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Sargı Sıcaklığı:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="C" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Yağ Sıcaklığı:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="C" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">Soğutma Şekli:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>ONAN</option>
+                                                <option>ONAF</option>
+                                                <option>OFAF</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Sargı Sayısı:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Sarım Gerilimi:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="V/sarım" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-heading text-center bg-info">AÇIKLAMALAR</div>
+                                <div class="panel-body text-dark p-3">
+                                    <div class="form-group row justify-content-center">
+                                        <textarea  class="form-control" rows="5"></textarea>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="tab-pane" id="sargi" role="tabpanel">
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-white text-center"> AG</div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-white text-center"> YG</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-white text-center"> İA</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading text-white text-center">KA</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Uw:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Un:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kV" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Ikd:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kA" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kA" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kA" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="kA" />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Ayar Sahası:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="%" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="%" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="%" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="%" />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">In(NOM/MAX):</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">S(NOM/MAX):</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A/mm2" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A/mm2" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A/mm2" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A/mm2" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">MAX Sargı Akımı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="A" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Sargı Direnci:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="Ohm" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="Ohm" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="Ohm" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="Ohm" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Sarım Yönü:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>SAĞ</option>
+                                                <option>SOL</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>SAĞ</option>
+                                                <option>SOL</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>SAĞ</option>
+                                                <option>SOL</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>SAĞ</option>
+                                                <option>SOL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Kat Sayısı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Katta Sarım Sayısı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Radyal Paralel İletken Sayısı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Aksiyel Paralel İletken Sayısı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Grup Sayısı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Sargı Radyalı:</label>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+              
+
+            </div>
+
+
+            <div class="tab-pane" id="akim" role="tabpanel">Akım Değerleri Gelecek.... </div>
+            <div class="tab-pane" id="cekirdek" role="tabpanel">
+
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">Çekirdek Formu:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select  class="form-select">
+                                                <option></option>
+                                                <option>2/0</option>
+                                                <option>3/0</option>
+                                                <option>1/2</option>
+                                                <option>2/2</option>
+                                                <option>3/2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Saç Cinsi:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Kod No:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">D(ÇEK):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Q(BAC):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="cm2" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">H(PEN):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">B(BAC-MAX):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Q(BOY/GD):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="cm2" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">H(ARA BOY):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">B(BOY-MAX):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">Q(ARA BOY):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="cm2" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">A(PEN):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+                                        <div class="col-md-2">
+                                            <label class="control-label">B(GD-MAX):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">ANA BOY KADEME SAYISI:</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label">A(GD):</label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input class="form-control" placeholder="mm" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+
+                                    <div class="form-group row justify-content-center text-dark">
+
+                                        <div class="col-md-3">
+                                            <label class="control-label">SOĞUTMA KANAL ADI</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">KALINLIĞI</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">YERİ</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">ADET</label>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> K 1</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> K 2</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> K 3</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> K 4</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default border-dark">
+                                <div class="panel-body text-dark p-3">
+
+                                    <div class="form-group row justify-content-center text-dark">
+
+                                        <div class="col-md-3">
+                                            <label class="control-label">PSP İZOLASYONU</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">KALINLIĞI</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">YERİ</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">ADET</label>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> PSP 1</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> PSP 2</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> PSP 3</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-center">
+
+                                        <div class="col-md-3">
+                                            <div class="panel-heading text-white text-center" style="width:100px;"> PSP 4</div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="mm" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="form-control" style="width:150px;" placeholder="" />
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 mb-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <input class="btn btn-primary col-md-5" type="submit" value="Kaydet" />
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+@*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>*@
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

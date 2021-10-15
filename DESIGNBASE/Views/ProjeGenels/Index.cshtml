@@ -1,0 +1,185 @@
+﻿@model IEnumerable<DESIGNBASE.Entities.ProjeGenel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TASARIM_BELGESI_NO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TRAFO_TANIM_KODU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROJE_ADI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FREKANS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOGUTMA_SEKLI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOGUTMA_SEKLI1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOGUTMA_SEKLI2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOGUTMA_SEKLI3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SARGI_SAYISI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BAGLANTI_GRUBU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IMALAT_NORMU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DENGELEME_SARGISI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TETA_MUH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SARGI_SIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YAG_SIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CALISMA_YERI_SIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CALISMA_YERI_YUK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MAX_KD_SURESI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SARIM_GERILIMI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TOPLAM_BAKIR_AGIRLIGI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SARGI_OLCULERI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACIKALAMALAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROJE_NO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SIPARIS_NO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TASARIM_NO)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TASARIM_BELGESI_NO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TRAFO_TANIM_KODU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROJE_ADI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FREKANS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOGUTMA_SEKLI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOGUTMA_SEKLI1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOGUTMA_SEKLI2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOGUTMA_SEKLI3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SARGI_SAYISI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BAGLANTI_GRUBU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IMALAT_NORMU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DENGELEME_SARGISI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TETA_MUH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SARGI_SIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YAG_SIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CALISMA_YERI_SIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CALISMA_YERI_YUK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAX_KD_SURESI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SARIM_GERILIMI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOPLAM_BAKIR_AGIRLIGI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SARGI_OLCULERI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACIKALAMALAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROJE_NO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SIPARIS_NO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TASARIM_NO)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

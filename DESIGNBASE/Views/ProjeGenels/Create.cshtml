@@ -1,0 +1,158 @@
+﻿@model DESIGNBASE.Entities.ProjeGenel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ProjeGenel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TASARIM_BELGESI_NO" class="control-label"></label>
+                <input asp-for="TASARIM_BELGESI_NO" class="form-control" />
+                <span asp-validation-for="TASARIM_BELGESI_NO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TRAFO_TANIM_KODU" class="control-label"></label>
+                <input asp-for="TRAFO_TANIM_KODU" class="form-control" />
+                <span asp-validation-for="TRAFO_TANIM_KODU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PN" class="control-label"></label>
+                <input asp-for="PN" class="form-control" />
+                <span asp-validation-for="PN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PROJE_ADI" class="control-label"></label>
+                <input asp-for="PROJE_ADI" class="form-control" />
+                <span asp-validation-for="PROJE_ADI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FREKANS" class="control-label"></label>
+                <input asp-for="FREKANS" class="form-control" />
+                <span asp-validation-for="FREKANS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SOGUTMA_SEKLI" class="control-label"></label>
+                <input asp-for="SOGUTMA_SEKLI" class="form-control" />
+                <span asp-validation-for="SOGUTMA_SEKLI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SOGUTMA_SEKLI1" class="control-label"></label>
+                <input asp-for="SOGUTMA_SEKLI1" class="form-control" />
+                <span asp-validation-for="SOGUTMA_SEKLI1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SOGUTMA_SEKLI2" class="control-label"></label>
+                <input asp-for="SOGUTMA_SEKLI2" class="form-control" />
+                <span asp-validation-for="SOGUTMA_SEKLI2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SOGUTMA_SEKLI3" class="control-label"></label>
+                <input asp-for="SOGUTMA_SEKLI3" class="form-control" />
+                <span asp-validation-for="SOGUTMA_SEKLI3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SARGI_SAYISI" class="control-label"></label>
+                <input asp-for="SARGI_SAYISI" class="form-control" />
+                <span asp-validation-for="SARGI_SAYISI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BAGLANTI_GRUBU" class="control-label"></label>
+                <input asp-for="BAGLANTI_GRUBU" class="form-control" />
+                <span asp-validation-for="BAGLANTI_GRUBU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IMALAT_NORMU" class="control-label"></label>
+                <input asp-for="IMALAT_NORMU" class="form-control" />
+                <span asp-validation-for="IMALAT_NORMU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DENGELEME_SARGISI" class="control-label"></label>
+                <input asp-for="DENGELEME_SARGISI" class="form-control" />
+                <span asp-validation-for="DENGELEME_SARGISI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TETA_MUH" class="control-label"></label>
+                <input asp-for="TETA_MUH" class="form-control" />
+                <span asp-validation-for="TETA_MUH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SARGI_SIC" class="control-label"></label>
+                <input asp-for="SARGI_SIC" class="form-control" />
+                <span asp-validation-for="SARGI_SIC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YAG_SIC" class="control-label"></label>
+                <input asp-for="YAG_SIC" class="form-control" />
+                <span asp-validation-for="YAG_SIC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CALISMA_YERI_SIC" class="control-label"></label>
+                <input asp-for="CALISMA_YERI_SIC" class="form-control" />
+                <span asp-validation-for="CALISMA_YERI_SIC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CALISMA_YERI_YUK" class="control-label"></label>
+                <input asp-for="CALISMA_YERI_YUK" class="form-control" />
+                <span asp-validation-for="CALISMA_YERI_YUK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MAX_KD_SURESI" class="control-label"></label>
+                <input asp-for="MAX_KD_SURESI" class="form-control" />
+                <span asp-validation-for="MAX_KD_SURESI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SARIM_GERILIMI" class="control-label"></label>
+                <input asp-for="SARIM_GERILIMI" class="form-control" />
+                <span asp-validation-for="SARIM_GERILIMI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TOPLAM_BAKIR_AGIRLIGI" class="control-label"></label>
+                <input asp-for="TOPLAM_BAKIR_AGIRLIGI" class="form-control" />
+                <span asp-validation-for="TOPLAM_BAKIR_AGIRLIGI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SARGI_OLCULERI" class="control-label"></label>
+                <input asp-for="SARGI_OLCULERI" class="form-control" />
+                <span asp-validation-for="SARGI_OLCULERI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACIKALAMALAR" class="control-label"></label>
+                <input asp-for="ACIKALAMALAR" class="form-control" />
+                <span asp-validation-for="ACIKALAMALAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PROJE_NO" class="control-label"></label>
+                <input asp-for="PROJE_NO" class="form-control" />
+                <span asp-validation-for="PROJE_NO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SIPARIS_NO" class="control-label"></label>
+                <input asp-for="SIPARIS_NO" class="form-control" />
+                <span asp-validation-for="SIPARIS_NO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TASARIM_NO" class="control-label"></label>
+                <input asp-for="TASARIM_NO" class="form-control" />
+                <span asp-validation-for="TASARIM_NO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
